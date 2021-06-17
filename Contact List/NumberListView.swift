@@ -9,15 +9,30 @@ import SwiftUI
 
 struct NumberListView: View {
     
-    let person: [Person]
+    let persons: [Person]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(persons, id: \.self) { person in
+                Section(header: Text("\(person.fullName)")) {
+                    HStack {
+                        Image(systemName: "phone.fill")
+                        Text("\(person.phoneNumber)")
+                    }
+                    HStack {
+                        Image(systemName: "tray.fill")
+                        Text("\(person.email)")
+                    }
+                }
+            }
+        }
     }
 }
 
-struct NumberListView_Previews: PreviewProvider {
+
+    struct NumberListView_Previews: PreviewProvider {
     static var previews: some View {
-        NumberListView(person: Person.getContactList())
+        NumberListView(persons: Person.getContactList())
     }
 }
+
