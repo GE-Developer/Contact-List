@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE032C51267AE5630014F80D /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE032C50267AE5630014F80D /* ContactView.swift */; };
 		EE93D688267AC2D600788DDB /* Contact_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D687267AC2D600788DDB /* Contact_ListApp.swift */; };
 		EE93D68A267AC2D600788DDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D689267AC2D600788DDB /* ContentView.swift */; };
 		EE93D68C267AC2D700788DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE93D68B267AC2D700788DDB /* Assets.xcassets */; };
 		EE93D68F267AC2D700788DDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE93D68E267AC2D700788DDB /* Preview Assets.xcassets */; };
+		EE93D697267AC30100788DDB /* Data Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D696267AC30100788DDB /* Data Manager.swift */; };
+		EE93D69B267AC34400788DDB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D69A267AC34400788DDB /* Person.swift */; };
+		EE93D69F267AD55200788DDB /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D69E267AD55100788DDB /* ContactListView.swift */; };
+		EE93D6A1267AD57500788DDB /* NumberListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93D6A0267AD57500788DDB /* NumberListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE032C50267AE5630014F80D /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		EE93D684267AC2D600788DDB /* Contact List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE93D687267AC2D600788DDB /* Contact_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact_ListApp.swift; sourceTree = "<group>"; };
 		EE93D689267AC2D600788DDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE93D68B267AC2D700788DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE93D68E267AC2D700788DDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE93D690267AC2D700788DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE93D696267AC30100788DDB /* Data Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Manager.swift"; sourceTree = "<group>"; };
+		EE93D69A267AC34400788DDB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EE93D69E267AD55100788DDB /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		EE93D6A0267AD57500788DDB /* NumberListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +62,14 @@
 		EE93D686267AC2D600788DDB /* Contact List */ = {
 			isa = PBXGroup;
 			children = (
-				EE93D687267AC2D600788DDB /* Contact_ListApp.swift */,
+				EE93D69C267AC35200788DDB /* Models */,
 				EE93D689267AC2D600788DDB /* ContentView.swift */,
-				EE93D68B267AC2D700788DDB /* Assets.xcassets */,
-				EE93D690267AC2D700788DDB /* Info.plist */,
+				EE93D69E267AD55100788DDB /* ContactListView.swift */,
+				EE032C50267AE5630014F80D /* ContactView.swift */,
+				EE93D6A0267AD57500788DDB /* NumberListView.swift */,
+				EE93D698267AC31200788DDB /* Services */,
+				EE93D699267AC32000788DDB /* Resources */,
+				EE93D69D267AC37200788DDB /* Supports */,
 				EE93D68D267AC2D700788DDB /* Preview Content */,
 			);
 			path = "Contact List";
@@ -67,6 +81,39 @@
 				EE93D68E267AC2D700788DDB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE93D698267AC31200788DDB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE93D696267AC30100788DDB /* Data Manager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EE93D699267AC32000788DDB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE93D68B267AC2D700788DDB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE93D69C267AC35200788DDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE93D69A267AC34400788DDB /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE93D69D267AC37200788DDB /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				EE93D690267AC2D700788DDB /* Info.plist */,
+				EE93D687267AC2D600788DDB /* Contact_ListApp.swift */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE93D69F267AD55200788DDB /* ContactListView.swift in Sources */,
+				EE93D697267AC30100788DDB /* Data Manager.swift in Sources */,
 				EE93D68A267AC2D600788DDB /* ContentView.swift in Sources */,
+				EE93D6A1267AD57500788DDB /* NumberListView.swift in Sources */,
+				EE032C51267AE5630014F80D /* ContactView.swift in Sources */,
+				EE93D69B267AC34400788DDB /* Person.swift in Sources */,
 				EE93D688267AC2D600788DDB /* Contact_ListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Contact List/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Contact List/Info.plist";
+				INFOPLIST_FILE = "Contact List/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Contact List/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Contact List/Info.plist";
+				INFOPLIST_FILE = "Contact List/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
